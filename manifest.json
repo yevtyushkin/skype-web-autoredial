@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Skype Web Autoredial",
+  "version": "0.1",
+  "description": "This extension enables automatic redialing for Skype Web",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://web.skype.com/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
